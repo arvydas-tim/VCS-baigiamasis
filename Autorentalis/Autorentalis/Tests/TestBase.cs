@@ -22,7 +22,8 @@ namespace Autorentalis.Tests
         {
             _driver = CustomDrivers.GetFireFoxDriver();
 
-             _autorentalisHomePage = new AutorentalisHomePage(_driver);
+            _autorentalisHomePage = new AutorentalisHomePage(_driver);
+            _autorentalisHomePage.GoToPage().AcceptCookies();
 
         }
 
