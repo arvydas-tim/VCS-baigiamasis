@@ -55,7 +55,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Drivers\Browsers.cs" />
     <Compile Include="Drivers\CustomDrivers.cs" />
     <Compile Include="Pages\AutorentalisHomePage.cs" />

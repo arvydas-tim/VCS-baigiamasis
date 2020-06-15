@@ -19,10 +19,9 @@ namespace Autorentalis.Pages
 
         private IWebElement _pickUpPlace => Driver.FindElement(By.Id("select2-full_pick_up_place-container"));
         private IWebElement _pickUpPlaceDropDownItem1 => Driver.FindElement(By.XPath("//*[@id='select2-full_pick_up_place-results']/li[1]"));
-
+        
         //private IWebElement _dropOffPlace => Driver.FindElement(By.Id("select2-full_drop_off_place-container"));
-
-        //div[@id='ajax_errors']/div/ul/li
+            
 
         private IWebElement _pickUpDateButton => Driver.FindElement(By.Id("pick_up_date"));
         private IWebElement _dropOffDateButton => Driver.FindElement(By.Id("drop_off_date"));
@@ -119,14 +118,6 @@ namespace Autorentalis.Pages
             return this;
         }
 
-        //public AutorentalisHomePage SelectPickUpAndDropOffPlace(PickUpDropOffSite pickUpSite = PickUpDropOffSite.Vilnius_Vilniaus_oro_uostas_VNO, PickUpDropOffSite dropOffSite = PickUpDropOffSite.Vilnius_Vilniaus_oro_uostas_VNO)
-        //{
-        //    int pickUpSiteValue = Convert.ToInt32(pickUpSite);
-        //    int dropOffSiteValue = Convert.ToInt32(dropOffSite);
-        //    _pickUpPlace.Click();
-        //    _dropOffPlace.SelectByValue(Convert.ToString(dropOffSiteValue));
-        //    return this;
-        //}
         public AutorentalisHomePage SetPickUpAndDropOffPlace()
         {            
             _pickUpPlace.Click();
